@@ -5,6 +5,7 @@
 	--background-color_1: #003366;
 	--background-color_2: #0066cc;
 	--paragrapgh-color: #f2f2f2;
+	--link-color: #fff;
 }
 body {
 	margin: 0;
@@ -33,17 +34,17 @@ p{
 	display: block;
 	font-size: 20px;
 }
-/* header {
+header {
 	background-color: #003366;
 	color: #fff;
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-} */
+}
 
 .logo img {
-	max-height: 200px;
+	max-height: 100px;
 	margin-right: 20px;
 }
 
@@ -54,14 +55,14 @@ nav {
 }
 
 nav a {
-	color: #fff;
+	color: var(--link-color);
 	text-decoration: none;
 	padding: 10px;
 	margin: 0 10px;
 }
 
 nav a:hover {
-	background-color: #003366;
+	background-color: var(--background-color_1);
 }
 
 main {
@@ -83,7 +84,7 @@ main {
 
 footer {
 	background-color: #003366;
-	color: #fff;
+	color: var(--link-color);
 	padding: 20px;
 	text-align: center;
 }
@@ -101,7 +102,7 @@ h2.contact_us{
 
 
 #about{
-	margin-top: 250px;
+	margin-top: 50px;
 }
 
 img, video {
@@ -110,7 +111,7 @@ img, video {
     object-fit: contain;
   }
   .contact_us a {
-	color: #fff;
+	color: var(--link-color);
 	text-decoration: underline;
 }
 
@@ -120,12 +121,16 @@ img, video {
       width: 100%;
       height: auto;
     }
-	
 	h1{
-		font-size:10px;
+		display: none;
+	    /* margin-left:22px;
+		font-size: 8px; */
+	}
+	.logo img{
+		max-height: 150px;
 	}
 	#about{
-		margin-top:400px;
+		margin-top:10px;
 	}
   }
   
