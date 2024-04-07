@@ -110,7 +110,7 @@ img, video {
     height: auto;
     object-fit: contain;
   }
-  .contact_us a {
+		  .contact_us a {
 	color: var(--link-color);
 	text-decoration: underline;
 }
