@@ -4,10 +4,46 @@
 	<title>No More Victims Safe House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+	<script
+	src="https://kit.fontawesome.com/ced7c3a3be.js"
+	crossorigin="anonymous"
+  ></script>
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<div class="logo">
+					<img src="images/logo.jpg" alt="No More Victims Safe House Logo">
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+
+			  <div
+				class="collapse navbar-collapse d-flex justify-content-end"
+				id="navbarNavAltMarkup"
+			  >
+			    <h1>No More Victims Safe House</h1>
+				<div class="navbar-nav">
+				  <a  aria-current="page" href="/" title="Home"
+					>Home</a
+				  >
+				  <a  href="#about" title="About"
+					>About</a
+				  >
+				  <a  href="#gallery" title="Gallery">Gallery</a>
+				  <a  href="#contact" title="Contact">Contact</a>
+				</div>
+			  </div>
+			</div>
+		  </nav>
+		<!-- <div class="logo">
 			<img src="images/logo.jpg" alt="No More Victims Safe House Logo">
 		</div>
 		<h1>No More Victims Safe House</h1>
@@ -16,17 +52,25 @@
 			<a href="#">About</a>
 			<a href="#">Gallery</a>
 			<a href="#">Contact</a>
-		</nav>
+		</nav> -->
 	</header>
 	<main>
 		<section id="about">
 			<h2>About Us</h2>
-			<p>This is a SafeHouse situated in Eldorado Park, Soweto. The safe house will assist in addressing the challenge of children who have been removed from the lolly lounges who need temporary accommodation before being referred to relevant institutions.</p>
-			<p>It will operate as a temporary safe house intended to provide short-term protective accommodation on an emergency crisis-intervention basis to primarily high risk children under the age of 18 years.</p>
+			<div class="container">
+				<div class="row mt-4">
+					<div class="col-6">
+						<p>This is a SafeHouse situated in Eldorado Park, Soweto. The safe house will assist in addressing the challenge of children who have been removed from the lolly lounges who need temporary accommodation before being referred to relevant institutions.</p>
+					</div>
+					<div class="col-6">
+						<p>It will operate as a temporary safe house intended to provide short-term protective accommodation on an emergency crisis-intervention basis to primarily high risk children under the age of 18 years.</p>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="gallery">
+		<section class="mt-4" id="gallery">
 			<h2>Gallery</h2>
-			<div class="gallery">
+			<div class="gallery mt-4">
 				<img src="images/117418046_125896885879092_2279901663356656401_n.jpg" alt="Image 1">
 				<img src="images/117591076_125896819212432_3112457805747382505_n.jpg" alt="Image 2">
 				<img src="images/117604418_125896865879094_9125511265459753739_n.jpg" alt="Image 3">
@@ -37,13 +81,17 @@
 		</section>
 	</main>
 	<footer>
-		<div class="contact">
-			<h2>Contact Us</h2>
-			<p>For queries regarding donations, please contact 011 945 1252</p>
-            <p>You can also visit our Facebook page: <a href="https://m.facebook.com/people/No-More-Victims-Safe-House/100069322004697/">No More Victims Safe House</a></p>
-			<p>Address: 27 Goud St, Eldorado Park, Soweto, 1811</p>
-		</div>
-		<p>&copy; 2024 No More Victims Safe House. All rights reserved.</p>
+		<section id="contact">
+			<div class="contact_us">
+				<h2 class="contact_us">Contact Us</h2>
+				<p>For queries regarding donations:</p>
+				<p> <i class="fa-solid fa-phone"></i> 011 945 1252</p>
+
+				<p><i class="fa-brands fa-facebook"></i> You can also visit our Facebook page: <a href="://m.facebook.com/people/No-More-Victims-Safe-House/100069322004697/">No More Victims Safe House</a></p>
+				<p><i class="fa-solid fa-location-dot"></i> Address: 27 Goud St, Eldorado Park, Soweto, 1811</p>
+			</div>
+			<p>&copy; 2024 No More Victims Safe House. All rights reserved.</p>
+	</section>
 	</footer>
 </body>
 </html>
